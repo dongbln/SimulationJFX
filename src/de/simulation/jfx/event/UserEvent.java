@@ -38,7 +38,6 @@ public class UserEvent {
 		this.age=tempId;
 		Calendar calendar = Calendar.getInstance();
 		Timestamp currentTimestamp = new java.sql.Timestamp(calendar.getTime().getTime());
-
 		this.ts = currentTimestamp;
 
 	}
