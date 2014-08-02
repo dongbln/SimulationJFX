@@ -53,9 +53,9 @@ public class Simulation extends Application {
 		btn.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent event) {
 				// Parse the number of events from the GUI
-				int no = Integer.parseInt(field1.getText());
+				long no = Long.parseLong(field1.getText());
 				// Generare the events
-				for (int i = 0; i < no; i++) {
+				for (long i = 0; i < no; i++) {
 					UserEvent uEvent = new UserEvent();
 					System.out.println(uEvent.toString());
 
